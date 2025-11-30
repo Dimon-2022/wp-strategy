@@ -23,5 +23,7 @@ add_action('init', 'awesome_theme_setup');
 
 add_theme_support('post-thumbnails');
 
+add_theme_support('post-formats', array('aside','gallery','link','image','quote','status','video','audio','chat'));
+
 
 
