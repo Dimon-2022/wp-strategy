@@ -21,3 +21,7 @@ function awesome_theme_setup()
 
 add_action('init', 'awesome_theme_setup');
 
+add_theme_support('post-thumbnails');
+
+
+
