@@ -1,7 +1,7 @@
 html,
 body {
     margin: 0;
-    color:#333;
+    color: #333;
     background-color: #eee;
     font: sans-serif;
 }
@@ -13,5 +13,66 @@ body {
 .postid-6 {
     background-color: pink;
 }
+
+
+#dima-student {
+    background-color: violet;
+}
+
+
+.dima {
+    background-color: #0000ff;
+
+    @media (min-width: 576px) {
+        background-color: #ff0000;
+    }
+    @media (min-width: 768px) {
+        background-color: cyan;
+    }
+    @media (min-width: 992px) {
+        background-color: #00ff00 !important;
+    }
+}
+
+.dima h1 {
+    font-size: 12px;
+
+    @media (min-width: 576px) {
+        font-size: 14px;
+        color: #CC6633;
+    }
+    @media (min-width: 768px) {
+        font-size: 20px;
+
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
+
+}
+
+.post-content {
+    background: blue;
+
+    @media (min-width: 768px) {
+        width: 80%;
+    }
+}
+
+.sidebar {
+    background: yellow;
+
+    @media (min-width: 768px) {
+        width: 20%;
+    }
+}
+
+
 
 
