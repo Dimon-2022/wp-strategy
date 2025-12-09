@@ -16,16 +16,17 @@
 
         <!--Sidebar block-->
         <div class="col-xs-12 col-sm-4">
-            <?php $query = new WP_Query(
-                    array(
-                        'post_type' => 'post',
-                        'post_status' => 'publish',
-                        'orderby' => 'data',
-                        'order' => 'DESC',
-                        'posts_per_page' => 2,
-                        'category_name' => 'parrots'
-                    )
+            <?php
+            $args = array(
+                    'post_type' => 'post',
+                    'post_status' => 'publish',
+                    'orderby' => 'data',
+                    'order' => 'DESC',
+                    'posts_per_page' => 3,
+                    'category_name' => 'parrots'
             );
+
+            $query = new WP_Query($args);
 
             if($query->have_posts()){
                 while($query->have_posts()){
@@ -35,6 +36,7 @@
 
                 }
             }
+            wp_reset_postdata();
             ?>
             <?php get_sidebar(); ?></div>
     </div>
