@@ -1,5 +1,9 @@
 <?php
 
+define('THEME_PATH', get_template_directory());
+
+require_once THEME_PATH . '/inc/cpt.php';
+
 function awesome_script_enqueue()
 {
     wp_enqueue_style('customstyle', get_template_directory_uri() . '/css/awesome.css', array(), time(), 'all');
@@ -73,5 +77,4 @@ function awesome_widget_setup(){
 }
 
 add_action('widgets_init', 'awesome_widget_setup');
-
 
