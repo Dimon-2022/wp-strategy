@@ -12,3 +12,7 @@
 <?php wp_nav_menu(array(
         'theme_location' => 'primary',
 )); ?>
+
+<div class="search-form-container">
+    <?php get_search_form(); ?>
+</div>
