@@ -17,9 +17,10 @@ get_header(); ?>
                     </article>
 
 
-                <?php endwhile;
-            endif;
-            ?>
+                <?php endwhile;?>
+                <?php next_post_link(); ?>
+                <?php previous_post_link(); ?>
+            <?php endif; ?>
 
         </div>
 

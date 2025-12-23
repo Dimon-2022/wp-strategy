@@ -8,9 +8,14 @@
 
                     <?php get_template_part('content', get_post_format()); ?>
 
-                <?php endwhile;
-            endif;
-            ?>
+                <?php endwhile; ?>
+                <div class="col-xs-6 text-left">
+                    <?php next_posts_link('<-Older posts'); ?>
+                </div>
+                <div class="col-xs-6 text-right">
+                    <?php previous_posts_link('Newer posts->'); ?>
+                </div>
+            <?php endif;?>
 
         </div>
 
