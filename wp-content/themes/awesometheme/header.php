@@ -11,6 +11,7 @@
 <body <?php body_class(); ?>
 <?php wp_nav_menu(array(
         'theme_location' => 'primary',
+        'walker' => new Walker_Nav_Primary(),
 )); ?>
 
 <div class="search-form-container">

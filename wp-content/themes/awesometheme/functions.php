@@ -3,6 +3,8 @@
 define('THEME_PATH', get_template_directory());
 
 require_once THEME_PATH . '/inc/cpt.php';
+require_once THEME_PATH . '/inc/walker.php';
+
 
 function awesome_script_enqueue()
 {
